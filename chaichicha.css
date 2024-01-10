@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+    /* background: transparent !important; */
+    justify-content: space-between;
+    background-color: white;
+    border-bottom: 1px solid #0E1E32;
+
+  }
+
+   
+  header a img{
+ width: 190px;
+ height: 100px;
+ margin-top: -15px;
+ 
+  }
+
+
+  header a {
+    text-decoration: none;
+  }
+
+    #menu-btn {
+    position: absolute;
+    top: -100%;
+    left: -100%;
+  }
+  
+  /* Hide hamburger for bigger screens */
+  .menu-icon {
+    visibility: hidden;
+  }
+  .menu {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    /* max-width: 250px; */
+    margin-right: 2rem;
+    font-family: 'Rajdhani', sans-serif;
+
+  }
+
+
+  .menu a{
+  /* margin-right: 100px; */
+  /* padding-left: -80px; */
+  padding-right:80px;
+  color: #0E1E32;
+  font-weight: 700;
+  }
+
+  .animate,.label{
+    visibility: visible;
+    animation: image 1s;
+  }
+
+  @keyframes image{
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+
+
+.italian-container{
+    width: 100%;
+    height: 590px;
+    background-color: black;
+    position: relative;
+}
+
+.italian-background-image{
+    background-image: url('./images/chai/Chai\ Chicha_Design_1_Texture.png');
+    min-height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.3;
+}
+
+.italian-title{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    font-family: 'Kinemon', sans-serif;
+    font-size: 5rem;
+    color: white;
+    transition: all 1s;
+    transform: rotate(350deg);
+
+}
+
+.italian-pizza-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 1rem;
+    
+}
+
+.italian-pizza-cover{
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+.italian-image-cover{
+    width: 300px;
+}
+.italian-pizza-cover img{
+    width: 100%;
+    border-radius: 5px;
+}
+.italian-pizza-cover img:hover{
+    transition: 0.5s ease-in-out;
+    transform: scale(0.8) rotate(-10deg);
+}
+
+.italian-pizza-content{
+    width: 600px;
+    height: 300px;
+}
+.italian-pizza-content-title{
+    font-size: 4rem;
+    color: #EB644B;
+    font-family: 'Kinemon', sans-serif;
+}
+.italian-pizza-content-caption{
+    font-size: 1.5rem;
+    font-family: 'rajdhani', sans-serif;
+
+}
+
+.italian-pizza-content button{
+    width: 135px;
+    padding: 5px;
+    margin-top: 1rem;
+    border: none;
+    outline: none;
+    background-color: #EB644B;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-family: 'Kinemon', sans-serif;
+    cursor: pointer;
+}
+
+.italian-pizza-content button:hover{
+    transition: all 0.5s;
+    background-color: #e45f47;
+}
+
+.italian-background-image2{
+    background-image: url('./images/chai/Chai\ Chicha_Design_1_Texture.png');
+    min-height: 400px;
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.italian-background-color{
+    min-height: 400px;
+    background-color: #0e1e32bb;
+}
+
+
+
+
+/* chai chicha image */
+
+.chaichicha-image-section{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  padding: 1rem 0;
+  background-color: white;
+}
+.chaichicha-image-cover{
+  width: 300px;
+}
+.chaichicha-image-cover img{
+  width: 100%;
+  border-radius: 3px;
+}
+
+
+.chaichicha-image-cover img:hover{
+  transition: 0.5s ease-in-out;
+  transform: scale(0.8) rotate(10deg);
+}
+.chaichicha-title{
+  font-family: 'Kinemon', sans-serif;
+  font-size: 4rem;
+  color: #EB644B;
+}
+.chaichicha-caption{
+  width: 600px;
+  font-size: 1.5rem;
+  font-family: 'rajdhani', sans-serif;
+
+}
+
+
+@media (max-width:800px) {
+  .italian-container{
+    width: 100%;
+    height: 490px;
+
+}
+  .italian-background-image{
+    min-height: 400px;
+
+}
+  .italian-title{
+    left: 0%;
+    padding-left: 2rem;
+    font-size: 4rem;
+}
+.chaichicha-caption{
+  width: 100%;
+  font-size: 1rem;
+  font-family: 'rajdhani', sans-serif;
+
+}
+
+  .chaichicha-image-section{
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .italian-pizza-cover{
+    padding: 0 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.italian-pizza-content{
+  width: 100%;
+  height: auto;
+}
+
+.chaichicha-caption{
+  width: 100%;
+  height: auto;
+  font-size: 1.5rem;
+  font-family: 'rajdhani', sans-serif;
+
+}
+.chaichicha-image-cover{
+  width: 260px;
+}
+}
+
+
+
+/* Nav Media Queries */
+
+
+@media screen and (max-width: 1100px) {
+  header {
+    display: grid;
+    grid-template-areas:
+      "title   title   hamburger"
+      "nav     nav     nav";
+  }
+
+  header a img {
+    grid-area: title;
+    position: relative;
+    z-index: 1000;
+    width: 170px;
+    height: 100px;
+    padding-top: 20px;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .menu-icon {
+    grid-area: hamburger;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    padding: 40px 20px 30px 0;
+    position: relative;
+    user-select: none;
+    visibility: visible;
+  }
+
+  .navicon {
+    background: #ffffff;
+    display: block;
+    height: 2px;
+    width: 30px;
+    position: relative;
+    z-index: 150;
+  }
+
+  .navicon:before {
+    top: 5px;
+  }
+
+  .navicon:after {
+    top: -5px;
+  }
+
+  .navicon:before,
+  .navicon:after {
+      
+    background: #000000;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    transition: all 0.2s ease-out;
+  }
+
+  .menu {
+    grid-area: nav;
+    max-width: unset;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    overflow: hidden;
+    margin: -90px 0px 0px 0px ;
+    padding: 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+
+  }
+
+  .menu a {
+    padding: 20px 20px !important;
+  font-size: 25px;
+    border-right: 1px solid #f4f4f4;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    width: 100%;
+    text-align: center;
+  
+  position: relative;
+  top: 20px;
+  }
+
+  .menu-btn:checked ~ .menu {
+    max-height: 100vh;
+  }
+
+  .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+
+  .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+
+  .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+
+  .menu-btn:checked ~ .menu-icon .navicon:before,
+  .menu-btn:checked ~ .menu-icon .navicon:after {
+    top: 0;
+  }
+
+
+
+}
+
+
+
+@media (max-width:800px){
+  .swiper-button-prev:after,
+  .swiper-button-next:after{
+    color: black;
+    font-weight: 500;
+    margin-top: 300px;
+    padding: 20px;
+    border: none;
+
+ 
+
+  }
+  
+
+}
