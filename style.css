@@ -15,7 +15,7 @@ body {
     display: flex;
     width: 100%;
     position: relative;
-    z-index: 1000;
+    z-index: 10000;
     background: transparent !important;
     justify-content: space-between;
     height: 50px;
@@ -23,9 +23,9 @@ body {
 
    
   header a img{
- width: 250px;
- height: 100px;
- margin-top: 10px;
+  width: 250px;
+  height: 100px;
+  margin-top: 10px;
  
   }
 
@@ -58,7 +58,7 @@ body {
   
   .menu {
     display: flex;
-   visibility: hidden;
+    visibility: hidden;
     align-items: center;
     /* max-width: 250px; */
     margin-right: 2rem;
@@ -95,8 +95,7 @@ body {
    .swiper-slide img{
      height: 100vh;
      width: 100% !important;
-     
-    
+
    }
  
   
@@ -257,9 +256,7 @@ body {
       margin-top: 300px;
       padding: 20px;
       border: none;
-  
-   
-  
+
     }
     
   
